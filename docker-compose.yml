@@ -1,0 +1,16 @@
+version: '3'
+services:
+  jenkins:
+    image: "jenkins/jenkins:lts"
+    user: root
+    networks:
+      - frontend
+    restart: always
+    volumes:
+      - ./JENKINS_DATA:/var/jenkins_home
+    ports:
+      - "8080:8080"
+
+
+networks:
+  frontend:
