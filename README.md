@@ -23,10 +23,5 @@ Here,
 ```
  sudo docker run -p 8080:8080 jenkins/jenkins:lts
 ```
-docker build -t dineshsonachalam/jenkins:2.0.0 .
 
-docker run \
-  -u root \
-  -p 8080:8080 \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-   dineshsonachalam/jenkins
+
